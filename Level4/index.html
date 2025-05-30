@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Holy Grail Layout</title>
+  <link rel="stylesheet" href="flexbox-style.css" />
+  <!-- For Grid version, switch to grid-style.css -->
+</head>
+<body>
+  <header>
+    <div class="logo">MyLogo</div>
+    <div class="user-menu">User</div>
+  </header>
+
+  <nav>
+    <ul class="nav-menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <div class="layout">
+    <aside class="sidebar left">
+      <button onclick="toggleSidebar(this)">☰</button>
+      <p>Left Sidebar</p>
+    </aside>
+
+    <main>
+      <div class="cards">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+      </div>
+    </main>
+
+    <aside class="sidebar right">
+      <button onclick="toggleSidebar(this)">☰</button>
+      <p>Right Sidebar</p>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-col">Links A</div>
+    <div class="footer-col">Links B</div>
+    <div class="footer-col">Links C</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
